@@ -62,6 +62,9 @@ if not none_var: # True
 
 ## Loops
 ```python
+# enumerate
+for i, el in enumerate(nums):
+
 # for ... in ...:
 primes = [2, 3, 5, 7]
 for prime in primes:
