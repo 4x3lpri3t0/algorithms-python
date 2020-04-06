@@ -1,7 +1,7 @@
 # algorithms-python
 A repository for algorithms and competitive programming problems with solutions implemented in Python.
 
-# Techniques & Tricks
+# Language
 
 ## Strings
 ```python
@@ -117,6 +117,123 @@ car2.value = 10000.00
 
 print(car1.description())
 print(car2.description())
+```
+
+## Dictionary
+```python
+phonebook = {}
+phonebook["John"] = 666
+print(phonebook) # {'John': 666}
+
+phonebook = {
+    "John" : 666
+}
+print(phonebook) # {'John': 666}
+
+# Iterating - .items() .keys() .values()
+for key, value in dictionary.items():
+
+# del or pop(key)
+# If you do not wish to use the returned value, then  del list[1]  is a better choice as
+# it gives the programmer instant impression that this value is being discarded and not popped into some other variable.
+del phonebook["John"]
+phonebook.pop("John")
+
+# in, not in dictionary
+if key in dictionary:
+if key not in dictionary:
+```
+
+## Lists
+```python
+# Reverse
+a = [1,2,4,5,1000]
+a.sort(reverse=True) # [1000,5,4,2,1]
+
+# List traversal
+range(start, stop, hop)
+range(n) # [0,1,...,n-1]
+range(1,n) # [1,...,n-1]
+range(1,n,2) # [1,3,5,...,n-1] if n is even, or [1,3,5,...,n-2] if n is odd
+range(n,-1,-1) # [n,n-1,n-2,...,0]
+range(len(arr)) # Provides indices of an array arr
+range(len(arr)-1,-1,-1) # Provides indices of arr backwards
+
+# List slicing
+arr[w:s] # Wait w elements, start copy (:), stop before reaching index s
+arr = [1,2,3,4]
+arr[1:] = [2,3,4]
+arr[:2] = [1,2]
+
+#List manipulation
+arr = [1,2,3]
+[str(x) for x in arr] # Output: ['1','2','3']
+map(lambda x: str(x), arr) # Output: ['1','2','3']
+[str(x) for x in arr if x%2] # Output: ['1','3']
+
+# List as queue
+arr = [1,2,3]
+arr.append(x) # queue.push(x)
+arr.pop(0) #queue.pop()
+arr[0] #queue.peek()
+
+# List as stack
+arr = [1,2,3]
+arr.append(x) #stack.push(x)
+arr.pop() # stack.pop()
+arr[-1] # stack.peek()
+```
+
+## List Comprehensions
+Create a new list based on another list.
+```python
+sentence = "Hello to the world"
+words = sentence.split()
+word_lengths = [len(word) for word in words if word != "the"]
+print(words)
+print(word_lengths) # [5, 2, 5]
+
+numbers = [34.6, -203.4, 44.9, -12.2]
+newlist = [num for num in numbers if num > 0]
+print(newlist) # [34.6, 44.9]
+```
+
+## Sets
+```python
+# .split()
+set("my name is Axel and Axel is my name".split()) # {'my', 'and', 'is', 'name', 'Axel'}
+
+a = set(["Jake", "John", "Jake"])
+print(a) # {'Jake', 'John'}
+
+# .intersection()
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+a.intersection(b) # {'John'}
+b.intersection(a) # {'John'}
+
+# .symmetric_difference()
+a = set(["Jake", "John"])
+b = set(["John", "Jill"])
+print(a.symmetric_difference(b)) # {'Jill', 'Jake'}
+print(b.symmetric_difference(a)) # {'Jake', 'Jill'}
+
+# Members of one but not the other:
+# .difference()
+a = set(["Jake", "John"])
+b = set(["John", "Jill"])
+a.difference(b) # {'Jake'}
+b.difference(a) # {'Jill'}
+
+# .union()
+a = set(["Jake", "John"])
+b = set(["John", "Jill"])
+a.union(b) # {'Jake', 'John', 'Jill'}
+
+# Set containing all the participants from event A which did not attend event B.
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+a.difference(b) #  {'Jake', 'Eric'}
 ```
 
 # Techniques & Tricks
