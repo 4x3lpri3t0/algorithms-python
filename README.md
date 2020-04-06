@@ -62,12 +62,11 @@ if not none_var: # True
 
 ## Loops
 ```python
-# for ... in ...:
-primes = [2, 3, 5, 7]
-for prime in primes:
-    print(prime)
+for i, num in enumerate(nums):
+for num in nums:
+for i in range(1, n):
     
-# range
+# range with step
 for x in range(3, 8, 2):
     print(x) # 3,5,7
 
