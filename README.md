@@ -5,9 +5,6 @@ A repository for algorithms and competitive programming problems with solutions 
 
 ## Strings
 ```python
-# Sum of all digits
-sum(map(lambda x: int(x)**2, str(n)))
-
 # Count char appearances in string (Linear)
 astring = "Hello world!"
 astring.count("l") # 3
@@ -237,3 +234,7 @@ a.difference(b) #  {'Jake', 'Eric'}
 ```
 
 # Techniques & Tricks
+```python
+# Sum of all digits
+sum(map(lambda x: int(x)**2, str(n)))
+```
