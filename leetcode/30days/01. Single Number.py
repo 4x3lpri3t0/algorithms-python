@@ -1,10 +1,11 @@
+# https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3283/
 class Solution:
-    def singleNumber(self, nums: List[int]) -> int:
+    def single_number(self, nums) -> int:
         from functools import reduce
         return reduce(lambda x, y: x ^ y, nums)
 
 # class Solution:
-#     def singleNumber(self, nums) -> int:
+#     def single_number(self, nums) -> int:
 #         set = []
 #         for num in nums:
 #             if num in set:
@@ -15,5 +16,5 @@ class Solution:
 
 
 s = Solution()
-print(s.singleNumber([2, 2, 1]))  # 1
-print(s.singleNumber([4, 1, 2, 1, 2]))  # 4
+print(s.single_number([2, 2, 1]))  # 1
+print(s.single_number([4, 1, 2, 1, 2]))  # 4
