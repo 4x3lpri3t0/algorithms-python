@@ -63,6 +63,7 @@ if not none_var: # True
 ## Loops
 ```python
 for i, num in enumerate(nums):
+for i, num in enumerate(nums, start=1):
 for num in nums:
 for i in range(1, n):
     
