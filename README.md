@@ -2,6 +2,7 @@
 A repository for algorithms and competitive programming problems with solutions implemented in Python.
 
 # To Review
+- [ ] is_first_come_first_served &rarr; Easy but tricky logic
 - [ ] sherlock-and-anagrams &rarr; Combinations
 
 # Language
