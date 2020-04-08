@@ -3,7 +3,7 @@ from collections import defaultdict
 
 
 class Solution:
-    def groupAnagrams(self, words):
+    def group_anagrams(self, words):
         ana = defaultdict(list)
         for word in words:
             sorted_word = ''.join(sorted(word))
@@ -12,4 +12,4 @@ class Solution:
 
 
 s = Solution()
-print(s.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
+print(s.group_anagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))

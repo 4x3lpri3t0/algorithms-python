@@ -1,18 +1,29 @@
 # https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3283/
-class Solution:
-    def single_number(self, nums) -> int:
-        from functools import reduce
-        return reduce(lambda x, y: x ^ y, nums)
 
-# class Solution:
-#     def single_number(self, nums) -> int:
-#         set = []
-#         for num in nums:
-#             if num in set:
-#                 set.remove(num)
-#             else:
-#                 set.append(num)
-#         return set.pop()
+
+class Solution:
+    def single_number(self, nums):
+        seen = set()
+        for num in nums:
+            if num in seen:
+                seen.remove(num)
+            else:
+                seen.add(num)
+        return seen.pop()
+
+
+def singleNumber(self, nums):  # Binary XOR(^)
+    if not nums:
+        return
+    res = nums[0]
+    for i in range(1, len(nums)):
+        res = res ^ nums[i]
+    return res
+
+
+def singleNumber_lambda(self, nums):  # Binary XOR(^) optimized w/ reduce+lambda
+    from functools import reduce
+    return reduce(lambda x, y: x ^ y, nums)
 
 
 s = Solution()

@@ -7,7 +7,7 @@ class TreeNode:
 
 
 class Solution:
-    def isUnivalTree(self, root: TreeNode) -> bool:
+    def is_unival_tree(self, root: TreeNode) -> bool:
         val = root.val
         q = []
         q.append(root)
