@@ -5,6 +5,7 @@ A repository for algorithms and competitive programming problems with solutions 
 - [ ] is_first_come_first_served &rarr; Easy but tricky logic
 - [ ] sherlock-and-anagrams &rarr; Combinations
 - [ ] highest-product-of-3 &rarr; Greedy
+- [ ] get_rotation_point_index &rarr; Binary search
 
 # Language
 
