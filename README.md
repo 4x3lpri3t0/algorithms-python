@@ -186,6 +186,8 @@ print(newlist) # [34.6, 44.9]
 
 ## Sets
 ```python
+empty_set = set()
+
 # .split()
 set("my name is Axel and Axel is my name".split()) # {'my', 'and', 'is', 'name', 'Axel'}
 
