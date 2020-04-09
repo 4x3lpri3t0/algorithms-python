@@ -228,6 +228,15 @@ a.difference(b) #  {'Jake', 'Eric'}
 
 # Techniques & Tricks
 ```python
+# max and min w/ inf
+max = float("-inf")
+min = float("inf")
+
+# max() and min()
+max("abcDEF") # find largest item in the string ('c')
+max([2, 1, 4, 3]) # 4
+max(("one", "two", "three")) # find largest item in the tuple ('two')
+
 # Sum of all digits
 sum(map(lambda x: int(x)**2, str(n)))
 ```
