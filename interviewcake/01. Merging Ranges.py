@@ -9,11 +9,10 @@ def merge_ranges(meetings):
         last_start, last_end = merged_meetings[-1]  # Get last ones
 
         if (current_start <= last_end):
-            # Update last tuple, merge with current
+            # Merge last tuple with current
             merged_meetings[-1] = (last_start,
                                    max(last_end, current_end))
-        else:
-            # They don't overlap
+        else:  # They don't overlap
             merged_meetings.append((current_start, current_end))
     return merged_meetings
 
