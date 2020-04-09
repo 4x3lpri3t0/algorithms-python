@@ -7,7 +7,7 @@ A repository for algorithms and competitive programming problems with solutions 
 - [ ] highest-product-of-3 &rarr; Greedy
 - [ ] get_rotation_point_index &rarr; Binary search
 - [ ] find_repeat &rarr; -> Pigeonhole principle + BS (Optimized for space)
-
+- [ ] is_balanced &rarr; -> BST w/ DFS, inf -inf and tuples
 # Language
 
 ## Strings
