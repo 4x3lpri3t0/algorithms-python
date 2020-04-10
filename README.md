@@ -183,11 +183,20 @@ arr = [1,2,3]
 map(lambda x: str(x), arr) # Output: ['1','2','3']
 [str(x) for x in arr if x%2] # Output: ['1','3']
 
-# List as queue
-arr = [1,2,3]
-arr.append(x) # queue.push(x)
-arr.pop(0) #queue.pop()
-arr[0] #queue.peek()
+# collections.deque -> All ops k time
+append(x)
+appendleft(x)
+clear()
+extend(iterable)
+extendleft(iterable)
+pop()
+popleft()
+
+remove(value)
+    Removed the first occurrence of value. If not found, raises a ValueError. New in version 2.5. 
+
+rotate(n)
+    Rotate the deque n steps to the right. If n is negative, rotate to the left. Rotating one step to the right is equivalent to: "d.appendleft(d.pop())". 
 
 # List as stack
 arr = [1,2,3]

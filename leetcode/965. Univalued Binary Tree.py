@@ -12,6 +12,7 @@ class Solution:
         q = []
         q.append(root)
         while len(q) > 0:
+            # TODO: Use collections.dequeue !!! pop(0) is LINEAR
             cur = q.pop(0)
             if cur.val != val:
                 return False
