@@ -1,6 +1,11 @@
 """ https://www.interviewcake.com/question/python3/second-largest-item-in-bst
 TC: O(h) so O(lg n) -> If tree is balanced, O(n) otherwise
 SC: O(1)
+
+Cases:
+    1- Largest node has a left subtree.
+    2- Largest node does not have a left subtree.
+
 """
 import unittest
 
@@ -13,13 +18,13 @@ def find_second_largest(root_node):
     current = root_node
     while current:
         # Case: current is largest and has a left subtree
-        # -> 2nd largest is the largest in that subtree
-        if current.left and current.right is None:
+        # -> largest left subtree is 2nd largest
+        if current.right is None and current.left:
             return find_largest(current.left)
 
         # Case: current is parent of largest, and largest has no children,
-        # so current is 2nd largest
-        if (current.right and current.right.left is None and current.right.right is None):
+        # -> current is 2nd largest
+        if current.right and current.right.right is None and current.right.left is None:
             return current.value
 
         current = current.right
