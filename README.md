@@ -8,6 +8,7 @@ A repository for algorithms and competitive programming problems with solutions 
 - [ ] get_rotation_point_index &rarr; Binary search
 - [ ] find_repeat &rarr; -> Pigeonhole principle + BS (Optimized for space)
 - [ ] is_balanced &rarr; -> BST w/ DFS, inf -inf and tuples
+- [ ] find_second_largest &rarr; -> BST, edge cases
 # Language
 
 ## Strings
