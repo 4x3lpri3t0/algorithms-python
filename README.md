@@ -75,14 +75,15 @@ if not none_var: # True
 
 ## Loops
 ```python
-for i, num in enumerate(nums):
-for i, num in enumerate(nums, start=1):
-for num in nums:
-for i in range(1, n):
+for index, value in enumerate(values):
+for index, value in enumerate(values, start=1):
+for value in values:
+for i in range(n): # 0, 1 ... n
+for i in range(1, n): # 1, 2 ... n
     
 # range with step
 for x in range(3, 8, 2):
-    print(x) # 3,5,7
+    print(x) # 3, 5 ,7
 
 # while
 while True:
@@ -92,25 +93,42 @@ while True:
 
 ## Classes and Objects
 ```python
-# define the Vehicle class
-class Vehicle:
-    kind = "car"
-    def description(self):
-        desc_str = "%s is a %s %s worth $%.2f." % (self.name, self.color, self.kind, self.value)
-        return desc_str
+# Stack with constant getMin() time
+class MinStack:
+    def __init__(self):
+        # Each element in the stack will be a tuple, (x, y). x is value, y is min value at the time.
+        self.stack = []
 
-# define objects
-car1 = Vehicle()
-car1.name = "Fer"
-car1.color = "red"
-car1.value = 60000.00
-car2 = Vehicle()
-car2.name = "Jump"
-car2.color = "blue"
-car2.value = 10000.00
+    def push(self, x: int) -> None:
+        if self.stack:
+            self.stack.append((x, min(x, self.stack[-1][1])))
+        else:
+            self.stack.append((x, x))
 
-print(car1.description())
-print(car2.description())
+    def pop(self) -> None:
+        if not self.stack:
+            return None
+
+        popped = self.stack.pop()
+        return popped
+
+    def top(self) -> int:
+        if not self.stack:
+            return None
+        return self.stack[-1][0]
+
+    def getMin(self) -> int:
+        if not self.stack:
+            return None
+        return self.stack[-1][1]
+
+
+# MinStack object will be instantiated and called as such:
+# obj = MinStack()
+# obj.push(x)
+# obj.pop()
+# top_value = obj.top()
+# min_value = obj.getMin()
 ```
 
 ## Dictionary
