@@ -1,22 +1,6 @@
 # DFS - To use a traversal that will hit leaves as quickly as possible.
 # So it allows us to short-circuit earlier in some cases.
-import sys
 import unittest
-
-
-class BinaryTreeNode(object):
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
-
-    def insert_left(self, value):
-        self.left = BinaryTreeNode(value)
-        return self.left
-
-    def insert_right(self, value):
-        self.right = BinaryTreeNode(value)
-        return self.right
 
 
 def is_balanced(tree_root):
@@ -48,8 +32,6 @@ def is_balanced(tree_root):
                 nodes.append((node.right, depth + 1))
 
     return True
-
-# Tests
 
 
 class Test(unittest.TestCase):

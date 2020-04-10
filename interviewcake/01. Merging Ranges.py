@@ -1,4 +1,9 @@
-# https://www.interviewcake.com/question/python3/merging-ranges
+""" https://www.interviewcake.com/question/python3/merging-ranges
+TC: O(n lg n)
+SC: O(n)
+"""
+
+
 def merge_ranges(meetings):
     sorted_meetings = sorted(meetings)  # key=lambda x: x[0] not needed here
 
@@ -6,7 +11,7 @@ def merge_ranges(meetings):
     merged_meetings = [sorted_meetings[0]]
 
     for current_start, current_end in sorted_meetings[1:]:
-        last_start, last_end = merged_meetings[-1]  # Get last ones
+        last_start, last_end = merged_meetings[-1]  # Get last meeting
 
         if (current_start <= last_end):
             # Merge last tuple with current
