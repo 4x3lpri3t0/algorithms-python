@@ -2,17 +2,18 @@
 A repository for algorithms and competitive programming problems with solutions implemented in Python.
 
 # To Review
-- [ ] is_first_come_first_served &rarr; Easy but tricky logic
-- [ ] sherlock-and-anagrams &rarr; Combinations
-- [ ] highest-product-of-3 &rarr; Greedy
-- [ ] get_rotation_point_index &rarr; Binary search
-- [ ] find_repeat &rarr; -> Pigeonhole principle + BS (Optimized for space)
-- [ ] is_balanced &rarr; -> BT w/ DFS, inf -inf and tuples
-- [ ] is_binary_search_tree &rarr; -> BST w/ DFS, inf -inf and triplets 
-- [ ] find_second_largest &rarr; -> BST, edge cases ### Adopted PEP 8 standards here ###
+- [ ] is_first_come_first_served        -> Easy but tricky logic
+- [ ] sherlock-and-anagrams             -> Combinations
+- [ ] highest-product-of-3              -> Greedy
+- [ ] get_rotation_point_index          -> BS
+- [ ] find_repeat                       -> BS (Space)[Pigeonhole principle]
+- [ ] is_balanced                       -> BT, DFS, inf -inf and tuples
+- [ ] is_binary_search_tree             -> BST, DFS, inf -inf and triplets 
+- [ ] find_second_largest               -> BST, edge cases ### PEP 8 ###
+- [ ] color_graph                       -> Graph, set
+- [ ] get_path                          -> Graph, BFS
 
-
-TODO: IC -> Replace tests with "print()" with proper unittests
+TODO: IC -> Replace "print()" with proper unittests
 
 # Language
 

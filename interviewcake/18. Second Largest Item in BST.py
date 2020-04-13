@@ -1,11 +1,12 @@
 """ https://www.interviewcake.com/question/python3/second-largest-item-in-bst
+* Write a function to find the 2nd largest element in a BST
+
 TC: O(h) so O(lg n) -> If tree is balanced, O(n) otherwise
 SC: O(1)
 
 Cases:
-    1- Largest node has a left subtree.
-    2- Largest node does not have a left subtree.
-
+    1- Largest node has a left subtree
+    2- Largest node does not have a left subtree
 """
 import unittest
 
