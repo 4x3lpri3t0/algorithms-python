@@ -1,7 +1,14 @@
-l = []
+students = []
 for _ in range(int(input())):
-    l.append([input(), float(input())])
+    name = input()
+    score = float(input())
+    students.append([name, score])
 
-sh = sorted(set([x[1] for x in l]))
-for name in sorted(x[0] for x in l if x[1] == sh[1]):
-    print(name)
+students = sorted(students, key=lambda x: x[1])
+second_lowest_score = sorted(set([x[1] for x in students]))[1]
+
+desired_students = []
+for stu in students:
+    if stu[1] == second_lowest_score:
+        desired_students.append(stu[0])
+print("\n".join(sorted(desired_students)))
