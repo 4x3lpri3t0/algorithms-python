@@ -273,4 +273,14 @@ max(("one", "two", "three")) # find largest item in the tuple ('two')
 
 # Sum of all digits
 sum(map(lambda x: int(x)**2, str(n)))
+
+# If the number of arguments is unknown, we can add a * before the parameter name.
+def combined_varargs(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+combined_varargs(1, 2, 3, a="hi")
+# Output:
+(1, 2, 3)
+{'a': 'hi'}
 ```
