@@ -284,3 +284,19 @@ combined_varargs(1, 2, 3, a="hi")
 (1, 2, 3)
 {'a': 'hi'}
 ```
+
+# Python Input Methods for CP: https://www.geeksforgeeks.org/python-input-methods-competitive-programming/
+
+# Python3 for CP: https://codeforces.com/blog/entry/69801
+# Fast input:
+```python
+import sys
+inp = [a.strip()
+       fo a in sys.stdin.readlines()]  #inp is an array of input lines.
+```
+# Matrix:
+```python
+import sys
+M = [list(map(int, a.strip().split())) for a in sys.stdin.readlines()]
+# Then ^Z for exiting input mode when debugging.
+```
