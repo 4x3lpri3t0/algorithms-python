@@ -40,6 +40,8 @@ Note that you have to convert the output a*b*c\*d to a string when passing it to
 
 # To Review
 
+## Old
+
 - [ ] is_first_come_first_served -> Easy but tricky logic
 - [ ] sherlock-and-anagrams -> Combinations
 - [ ] highest-product-of-3 -> Greedy
@@ -51,7 +53,11 @@ Note that you have to convert the output a*b*c\*d to a string when passing it to
 - [ ] color_graph -> Graph, set
 - [ ] get_path -> Graph, BFS
 
-TODO: IC -> Replace "print()" with proper unittests
+## 2022
+
+### Arrays
+
+- [ ] 09-buy_and_sell_stock_twice -> First one was easy, second one requires an extra twist
 
 # Language syntax
 
