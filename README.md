@@ -1,23 +1,62 @@
 # algorithms-python
+
 A repository for algorithms and competitive programming problems with solutions implemented in Python.
 
+# How to read input in Python in Online Judges
+
+If you have to read numbers a b c d...
+
+## Method 1a: Using a list comprehension
+
+```python
+a, b, c, d = [int(x) for x in input().split()]
+```
+
+## Method 1b: Using the map function
+
+```python
+a, b, c, d = map(int, input().split())
+```
+
+A faster way is to use stdin and stdout:
+
+## Method 2a: List comprehension with stdin and stdout
+
+```python
+from sys import stdin, stdout
+a, b, c, d = [int(x) for x in stdin.readline().rstrip().split()]
+stdout.write( str(a*b*c\*d) + "\n" )
+```
+
+## Method 2b: Map with stdin and stdout
+
+```python
+from sys import stdin, stdout
+a, b, c, d = map( int, stdin.readline().rstrip().split() )
+stdout.write( str(a*b*c*d) + "\n" )
+```
+
+Note that you have to convert the output a*b*c\*d to a string when passing it to the function stdout.write(…).
+
 # To Review
-- [ ] is_first_come_first_served        -> Easy but tricky logic
-- [ ] sherlock-and-anagrams             -> Combinations
-- [ ] highest-product-of-3              -> Greedy
-- [ ] get_rotation_point_index          -> BS
-- [ ] find_repeat                       -> BS (Space)[Pigeonhole principle]
-- [ ] is_balanced                       -> BT, DFS, inf -inf and tuples
-- [ ] is_binary_search_tree             -> BST, DFS, inf -inf and triplets 
-- [ ] find_second_largest               -> BST, edge cases ### PEP 8 ###
-- [ ] color_graph                       -> Graph, set
-- [ ] get_path                          -> Graph, BFS
+
+- [ ] is_first_come_first_served -> Easy but tricky logic
+- [ ] sherlock-and-anagrams -> Combinations
+- [ ] highest-product-of-3 -> Greedy
+- [ ] get_rotation_point_index -> BS
+- [ ] find_repeat -> BS (Space)[Pigeonhole principle]
+- [ ] is_balanced -> BT, DFS, inf -inf and tuples
+- [ ] is_binary_search_tree -> BST, DFS, inf -inf and triplets
+- [ ] find_second_largest -> BST, edge cases ### PEP 8 ###
+- [ ] color_graph -> Graph, set
+- [ ] get_path -> Graph, BFS
 
 TODO: IC -> Replace "print()" with proper unittests
 
-# Language
+# Language syntax
 
 ## Strings
+
 ```python
 # Count char appearances in string (Linear)
 astring = "Hello world!"
@@ -43,16 +82,17 @@ words = astring.split(" ") # ['Hello', 'world!']
 ```
 
 ## Conditions
+
 ```python
 # if ... in
 name = "John"
 list = ["John", "Rick"]
 if name in list:
     print("Name is either John or Rick.")
-    
+
 # if ... is
 if statement is True:
-    
+
 # ==
 if x == 2:
 
@@ -75,13 +115,14 @@ if not none_var: # True
 ```
 
 ## Loops
+
 ```python
 for index, value in enumerate(values):
 for index, value in enumerate(values, start=1):
 for value in values:
 for i in range(n): # 0, 1 ... n
 for i in range(1, n): # 1, 2 ... n
-    
+
 # range with step
 for x in range(3, 8, 2):
     print(x) # 3, 5 ,7
@@ -93,6 +134,7 @@ while True:
 ```
 
 ## Classes and Objects
+
 ```python
 # Stack with constant getMin() time
 class MinStack:
@@ -133,6 +175,7 @@ class MinStack:
 ```
 
 ## Dictionary
+
 ```python
 phonebook = {}
 phonebook["John"] = 666
@@ -158,6 +201,7 @@ if key not in dictionary:
 ```
 
 ## Lists
+
 ```python
 # Reverse
 a = [1,2,4,5,1000]
@@ -194,10 +238,10 @@ pop()
 popleft()
 
 remove(value)
-    Removed the first occurrence of value. If not found, raises a ValueError. New in version 2.5. 
+    Removed the first occurrence of value. If not found, raises a ValueError. New in version 2.5.
 
 rotate(n)
-    Rotate the deque n steps to the right. If n is negative, rotate to the left. Rotating one step to the right is equivalent to: "d.appendleft(d.pop())". 
+    Rotate the deque n steps to the right. If n is negative, rotate to the left. Rotating one step to the right is equivalent to: "d.appendleft(d.pop())".
 
 # List as stack
 arr = [1,2,3]
@@ -207,7 +251,9 @@ arr[-1] # stack.peek()
 ```
 
 ## List Comprehensions
+
 Create a new list based on another list.
+
 ```python
 sentence = "Hello to the world"
 words = sentence.split()
@@ -221,6 +267,7 @@ print(newlist) # [34.6, 44.9]
 ```
 
 ## Sets
+
 ```python
 empty_set = set()
 
@@ -261,6 +308,7 @@ a.difference(b) #  {'Jake', 'Eric'}
 ```
 
 # Techniques & Tricks
+
 ```python
 # max and min w/ inf
 max = float("-inf")
@@ -288,13 +336,17 @@ combined_varargs(1, 2, 3, a="hi")
 # Python Input Methods for CP: https://www.geeksforgeeks.org/python-input-methods-competitive-programming/
 
 # Python3 for CP: https://codeforces.com/blog/entry/69801
+
 # Fast input:
+
 ```python
 import sys
 inp = [a.strip()
        fo a in sys.stdin.readlines()]  #inp is an array of input lines.
 ```
+
 # Matrix:
+
 ```python
 import sys
 M = [list(map(int, a.strip().split())) for a in sys.stdin.readlines()]

@@ -1,6 +1,3 @@
-from xmlrpc.client import boolean
-
-
 def can_reach_end(A: list[int]) -> bool:
     max_pos = 0
     for cur_pos in range(len(A)):
@@ -22,3 +19,6 @@ assert can_reach_end(A) == True  # (We're already at last position)
 
 A = [0, 0]
 assert can_reach_end(A) == False
+
+# TC: O(n)
+# SC: O(1)
