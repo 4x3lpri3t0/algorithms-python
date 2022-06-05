@@ -60,7 +60,18 @@ Note that you have to convert the output a*b*c\*d to a string when passing it to
 - [ ] 09-buy_and_sell_stock_twice -> First one was easy, second one requires an extra twist
 - [ ] 10-computing-an-alternation
 - [ ] 11-enumerate-all-primes-to-n
-- [ ] 12-permute-the-elements-of-an-array -> Debug
+- [ ] 12-permute-the-elements-of-an-array -> Debug + Add Watch
+- [ ] 13-compute-next-permutation -> Debug + Add Watch
+
+#### Random
+
+- [ ] 14-samples-offline-data
+- [ ] 15 TODO
+- [ ] 16 TODO
+
+#### Multidimensional Arrays
+
+- [ ] 17-sudoku-checker
 
 # Language syntax
 
