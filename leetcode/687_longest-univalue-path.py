@@ -28,3 +28,4 @@ class Solution:
         # if root.val == root.left.val and root.left.val == root.right.val:
         #     return leftMax + rightMax + 1
         # return max(leftMax, rightMax)
+        return

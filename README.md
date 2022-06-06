@@ -72,6 +72,9 @@ Note that you have to convert the output a*b*c\*d to a string when passing it to
 #### Multidimensional Arrays
 
 - [ ] 17-sudoku-checker
+- [ ] 18-compute-spiral-ordering-of-2d-array
+- [ ] 19
+- [ ] 20
 
 # Language syntax
 
