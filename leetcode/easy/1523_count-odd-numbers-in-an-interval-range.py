@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/
 class Solution:
-    def countOdds(self, low: int, high: int) -> int:
+    def count_odds(self, low: int, high: int) -> int:
         total = 0
         if low % 2 == 1:
             total += 1

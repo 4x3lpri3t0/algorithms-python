@@ -3,7 +3,7 @@ import string
 
 
 class Solution:
-    def firstUniqChar(self, s: str) -> int:
+    def first_unique_char(self, s: str) -> int:
         map = {}
         for char in s:
             if char not in map:

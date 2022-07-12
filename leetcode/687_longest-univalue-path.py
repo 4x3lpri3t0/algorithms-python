@@ -7,11 +7,11 @@ class TreeNode:
 
 
 class Solution:
-    def longestUnivaluePath(self, root: TreeNode) -> int:
-        return self.getMaxPathLength(-1, 0, root)
+    def longest_univalue_path(self, root: TreeNode) -> int:
+        return self.get_max_path_length(-1, 0, root)
 
     # TODO: Fix!
-    def getMaxPathLength(self, previousVal, currentLength, root: TreeNode) -> int:
+    def get_max_path_length(self, previousVal, currentLength, root: TreeNode) -> int:
         # if root.val == previousVal:
         #     currentLength += 1
         # else:

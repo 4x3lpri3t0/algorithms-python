@@ -7,7 +7,7 @@ class TreeNode:
 
 
 class Solution:
-    def searchBST(self, root: TreeNode, val: int) -> TreeNode:
+    def search_BST(self, root: TreeNode, val: int) -> TreeNode:
         while root and root.val != val:
             root = root.left if val < root.val else root.right
         return root

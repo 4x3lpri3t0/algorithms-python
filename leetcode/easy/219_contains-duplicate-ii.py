@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/contains-duplicate-ii/
 class Solution:
-    def containsNearbyDuplicate(self, nums: list[int], k: int) -> bool:
+    def contains_nearby_duplicate(self, nums: list[int], k: int) -> bool:
         seen = {}  # value, index
         for i in range(len(nums)):
             value = nums[i]
@@ -11,4 +11,4 @@ class Solution:
 
 
 sol = Solution()
-assert sol.containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2) == False
+assert sol.contains_nearby_duplicate([1, 2, 3, 1, 2, 3], 2) == False

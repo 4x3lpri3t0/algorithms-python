@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/contains-duplicate/
 class Solution:
-    def containsDuplicate(self, nums: list[int]) -> bool:
+    def contains_duplicate(self, nums: list[int]) -> bool:
         seen = set()
 
         for num in nums:

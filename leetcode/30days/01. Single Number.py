@@ -12,7 +12,7 @@ class Solution:
         return seen.pop()
 
 
-def singleNumber(self, nums):  # Binary XOR(^)
+def single_number(self, nums):  # Binary XOR(^)
     if not nums:
         return
     res = nums[0]
@@ -21,8 +21,9 @@ def singleNumber(self, nums):  # Binary XOR(^)
     return res
 
 
-def singleNumber_lambda(self, nums):  # Binary XOR(^) optimized w/ reduce+lambda
+def single_number_lambda(self, nums):  # Binary XOR(^) optimized w/ reduce+lambda
     from functools import reduce
+
     return reduce(lambda x, y: x ^ y, nums)
 
 
