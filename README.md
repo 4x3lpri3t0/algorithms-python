@@ -261,10 +261,11 @@ pop()
 popleft()
 
 remove(value)
-    Removed the first occurrence of value. If not found, raises a ValueError. New in version 2.5.
+# Remove the first occurrence of value. If not found, raises a ValueError.
 
 rotate(n)
-    Rotate the deque n steps to the right. If n is negative, rotate to the left. Rotating one step to the right is equivalent to: "d.appendleft(d.pop())".
+# Rotate the deque n steps to the right. If n is negative, rotate to the left.
+# Rotating one step to the right is equivalent to: "d.appendleft(d.pop())".
 
 # List as stack
 arr = [1,2,3]
