@@ -357,9 +357,11 @@ combined_varargs(1, 2, 3, a="hi")
 {'a': 'hi'}
 ```
 
-# Python Input Methods for CP: https://www.geeksforgeeks.org/python-input-methods-competitive-programming/
+# Python Input Methods for CP:
+https://www.geeksforgeeks.org/python-input-methods-competitive-programming/
 
-# Python3 for CP: https://codeforces.com/blog/entry/69801
+# Python3 for CP:
+https://codeforces.com/blog/entry/69801
 
 # Fast input:
 
